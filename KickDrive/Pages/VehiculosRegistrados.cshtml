@@ -1,0 +1,55 @@
+﻿@page
+@model KickDrive.Pages.VehiculosRegistradosModel
+@{
+    ViewData["Title"] = "VehiculosRegistrados";
+}
+
+<h1>Vehiculos Registrados</h1>
+
+@if (Model.Vehiculos.Any())
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">@Html.DisplayNameFor(x => x.Vehiculos.FirstOrDefault().ItemModelNumber)</th>
+                <th scope="col">@Html.DisplayNameFor(x => x.Vehiculos.FirstOrDefault().NombreProp)</th>
+                <th scope="col">@Html.DisplayNameFor(x => x.Vehiculos.FirstOrDefault().Automovil)</th>
+                <th scope="col">@Html.DisplayNameFor(x => x.Vehiculos.FirstOrDefault().Modelo)</th>
+                <th scope="col">@Html.DisplayNameFor(x => x.Vehiculos.FirstOrDefault().NumeroMotor)</th>
+                <th scope="col">@Html.DisplayNameFor(x => x.Vehiculos.FirstOrDefault().placas)</th>
+                <th scope="col">@Html.DisplayNameFor(x => x.Vehiculos.FirstOrDefault().uso)</th>
+                <th scope="col">@Html.DisplayNameFor(x => x.Vehiculos.FirstOrDefault().largo)</th>
+                <th scope="col">@Html.DisplayNameFor(x => x.Vehiculos.FirstOrDefault().alto)</th>
+                <th scope="col">@Html.DisplayNameFor(x => x.Vehiculos.FirstOrDefault().ancho)</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Vehiculos)
+            {
+                <tr>
+                    <th scope="row">@Html.DisplayFor(m => item.ItemModelNumber)</th>
+                    <td>@Html.DisplayFor(m => item.NombreProp)</td>
+                    <td>@Html.DisplayFor(m => item.Automovil)</td>
+                    <td>@Html.DisplayFor(m => item.Modelo)</td>
+                    <td>@Html.DisplayFor(m => item.NumeroMotor)</td>
+                    <td>@Html.DisplayFor(m => item.placas)</td>
+                    <td>@Html.DisplayFor(m => item.uso)</td>
+                    <td>@Html.DisplayFor(m => item.largo)</td>
+                    <td>@Html.DisplayFor(m => item.alto)</td>
+                    <td>@Html.DisplayFor(m => item.ancho)</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <body>
+        <a class="nav-link text-dark" asp-area="" asp-page="/RegistroVehiculos">Registrar Vehiculos</a>
+    </body>
+
+}
+else
+{
+    <div class="border text-center">
+        <p>No se encontraron contenedores registrados</p>
+    </div>
+}
+

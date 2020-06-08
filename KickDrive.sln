@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KickDrive", "KickDrive\KickDrive.csproj", "{A816FBA3-A8DF-4CB7-AE9B-DB20B3AA0AFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{AA3AC23C-3B1F-4F8A-AF31-4174EDDAE9B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.csproj", "{A5305353-B2C8-4B81-9527-8E6A2634396C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A816FBA3-A8DF-4CB7-AE9B-DB20B3AA0AFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A816FBA3-A8DF-4CB7-AE9B-DB20B3AA0AFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A816FBA3-A8DF-4CB7-AE9B-DB20B3AA0AFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A816FBA3-A8DF-4CB7-AE9B-DB20B3AA0AFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA3AC23C-3B1F-4F8A-AF31-4174EDDAE9B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA3AC23C-3B1F-4F8A-AF31-4174EDDAE9B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA3AC23C-3B1F-4F8A-AF31-4174EDDAE9B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA3AC23C-3B1F-4F8A-AF31-4174EDDAE9B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5305353-B2C8-4B81-9527-8E6A2634396C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5305353-B2C8-4B81-9527-8E6A2634396C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5305353-B2C8-4B81-9527-8E6A2634396C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5305353-B2C8-4B81-9527-8E6A2634396C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {62AF676E-8CB8-4DA6-BDDB-0F005182E5BF}
+	EndGlobalSection
+EndGlobal

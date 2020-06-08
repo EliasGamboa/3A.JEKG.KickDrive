@@ -1,0 +1,24 @@
+﻿@page
+@model KickDrive.Pages.RegistroVehiculosModel
+@{
+    ViewData["Title"] = "RegistroVehiculos";
+}
+
+<h1>Registro de Vehiculos</h1>
+<body>
+    <div>
+        <input type="text" nombreprop="nombreprop" id="nombreprop" placeholder="Ingrese el Nombre del propietario del Vehiculo" size="100" />
+        <input type="text" Automovil="Automovil" id="Automovil" placeholder="Ingrese el automovil a registrar" size="100" />
+        <input type="text" Modelo="Modelo" id="Modelo" placeholder="Ingrese el modelo del automovil" size="100" />
+        <input type="text" NumeroMotor="NumeroMotor" id="Numeromotor" placeholder="Ingrese el numero del motor" size="100" />
+        <input type="text" placas="placas" id="placas" placeholder="Ingrese la placa del automovil" size="100" />
+        <input type="text" uso="uso" id="uso" placeholder="Ingrese el Uso del Automovil" size="100" />
+        <input type="text" largo="largo" id="largo" placeholder="Ingrese el largo del vehiculo" size="100" />
+        <input type="text" alto="alto" id="alto" placeholder="Ingrese el alto del vehiculo" size="100" />
+        <input type="text" ancho="ancho" id="ancho" placeholder="Ingrese el ancho del vehiculo" size="100" />
+    </div>
+    <button type="submit" value="Registrar">Registrar</button>
+    <button><a class="nav-link text-dark" asp-area="" asp-page="/VehiculosRegistrados">Cancelar</a></button>
+</body>
+
+
