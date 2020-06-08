@@ -1,0 +1,23 @@
+﻿@page
+@model KickDrive.Pages.RegistroModel
+@{
+    ViewData["Title"] = "Registro";
+}
+
+<h1>Registro</h1>
+
+<body>
+    <div>
+        <input type="text" nombre="nombre" id=nombre placeholder="nombre" size="100" />
+        <input type="text" apellidos="Apellidos" id=Apellidos placeholder="Apellidos" size="100" />
+        <input type="text" email="email" id=email placeholder="E-mail" size="100" />
+        <input type="text" telefono="telefono" id=telefono placeholder="Telefono" size="100" />
+        <div>
+        <label><input type="checkbox" id="Conductor" value="Conductor" />Conductor</label>
+        <label><input type="checkbox" id="Supervisor" value="Supervisor" />Supervisor</label>
+        </div>
+        <button type="submit" value="Registrar">Registrar</button>
+        <button><a class="nav-link text-dark" asp-area="" asp-page="/Index">Cancelar</a></button>
+    </div>
+</body>
+

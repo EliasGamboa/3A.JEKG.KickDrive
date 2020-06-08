@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Service
 {
-    interface IRepository2
+    public interface IRepository2
     {
         public IEnumerable<Conductor> getall();
     }

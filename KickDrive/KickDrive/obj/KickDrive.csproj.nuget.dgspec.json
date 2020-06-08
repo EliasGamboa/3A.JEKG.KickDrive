@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\saile\\Documents\\Aplicaciones WEB\\GitHub\\KickDrive\\KickDrive.csproj": {}
+    "C:\\Users\\saile\\Documents\\Aplicaciones WEB\\GitHub\\KickDrive\\KickDrive\\KickDrive.csproj": {}
   },
   "projects": {
-    "C:\\Users\\saile\\Documents\\Aplicaciones WEB\\GitHub\\KickDrive\\KickDrive.csproj": {
+    "C:\\Users\\saile\\Documents\\Aplicaciones WEB\\GitHub\\KickDrive\\KickDrive\\KickDrive.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\saile\\Documents\\Aplicaciones WEB\\GitHub\\KickDrive\\KickDrive.csproj",
+        "projectUniqueName": "C:\\Users\\saile\\Documents\\Aplicaciones WEB\\GitHub\\KickDrive\\KickDrive\\KickDrive.csproj",
         "projectName": "KickDrive",
-        "projectPath": "C:\\Users\\saile\\Documents\\Aplicaciones WEB\\GitHub\\KickDrive\\KickDrive.csproj",
+        "projectPath": "C:\\Users\\saile\\Documents\\Aplicaciones WEB\\GitHub\\KickDrive\\KickDrive\\KickDrive.csproj",
         "packagesPath": "C:\\Users\\saile\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\saile\\Documents\\Aplicaciones WEB\\GitHub\\KickDrive\\obj\\",
+        "outputPath": "C:\\Users\\saile\\Documents\\Aplicaciones WEB\\GitHub\\KickDrive\\KickDrive\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -31,11 +31,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\saile\\Documents\\Aplicaciones WEB\\GitHub\\Models\\Models.csproj": {
-                "projectPath": "C:\\Users\\saile\\Documents\\Aplicaciones WEB\\GitHub\\Models\\Models.csproj"
+              "C:\\Users\\saile\\Documents\\Aplicaciones WEB\\GitHub\\KickDrive\\Models\\Models.csproj": {
+                "projectPath": "C:\\Users\\saile\\Documents\\Aplicaciones WEB\\GitHub\\KickDrive\\Models\\Models.csproj"
               },
-              "C:\\Users\\saile\\Documents\\Aplicaciones WEB\\GitHub\\Service\\Service.csproj": {
-                "projectPath": "C:\\Users\\saile\\Documents\\Aplicaciones WEB\\GitHub\\Service\\Service.csproj"
+              "C:\\Users\\saile\\Documents\\Aplicaciones WEB\\GitHub\\KickDrive\\Service\\Service.csproj": {
+                "projectPath": "C:\\Users\\saile\\Documents\\Aplicaciones WEB\\GitHub\\KickDrive\\Service\\Service.csproj"
               }
             }
           }
@@ -76,14 +76,14 @@
         }
       }
     },
-    "C:\\Users\\saile\\Documents\\Aplicaciones WEB\\GitHub\\Models\\Models.csproj": {
+    "C:\\Users\\saile\\Documents\\Aplicaciones WEB\\GitHub\\KickDrive\\Models\\Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\saile\\Documents\\Aplicaciones WEB\\GitHub\\Models\\Models.csproj",
+        "projectUniqueName": "C:\\Users\\saile\\Documents\\Aplicaciones WEB\\GitHub\\KickDrive\\Models\\Models.csproj",
         "projectName": "Models",
-        "projectPath": "C:\\Users\\saile\\Documents\\Aplicaciones WEB\\GitHub\\Models\\Models.csproj",
+        "projectPath": "C:\\Users\\saile\\Documents\\Aplicaciones WEB\\GitHub\\KickDrive\\Models\\Models.csproj",
         "packagesPath": "C:\\Users\\saile\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\saile\\Documents\\Aplicaciones WEB\\GitHub\\Models\\obj\\",
+        "outputPath": "C:\\Users\\saile\\Documents\\Aplicaciones WEB\\GitHub\\KickDrive\\Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -132,14 +132,14 @@
         }
       }
     },
-    "C:\\Users\\saile\\Documents\\Aplicaciones WEB\\GitHub\\Service\\Service.csproj": {
+    "C:\\Users\\saile\\Documents\\Aplicaciones WEB\\GitHub\\KickDrive\\Service\\Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\saile\\Documents\\Aplicaciones WEB\\GitHub\\Service\\Service.csproj",
+        "projectUniqueName": "C:\\Users\\saile\\Documents\\Aplicaciones WEB\\GitHub\\KickDrive\\Service\\Service.csproj",
         "projectName": "Service",
-        "projectPath": "C:\\Users\\saile\\Documents\\Aplicaciones WEB\\GitHub\\Service\\Service.csproj",
+        "projectPath": "C:\\Users\\saile\\Documents\\Aplicaciones WEB\\GitHub\\KickDrive\\Service\\Service.csproj",
         "packagesPath": "C:\\Users\\saile\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\saile\\Documents\\Aplicaciones WEB\\GitHub\\Service\\obj\\",
+        "outputPath": "C:\\Users\\saile\\Documents\\Aplicaciones WEB\\GitHub\\KickDrive\\Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -159,8 +159,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\saile\\Documents\\Aplicaciones WEB\\GitHub\\Models\\Models.csproj": {
-                "projectPath": "C:\\Users\\saile\\Documents\\Aplicaciones WEB\\GitHub\\Models\\Models.csproj"
+              "C:\\Users\\saile\\Documents\\Aplicaciones WEB\\GitHub\\KickDrive\\Models\\Models.csproj": {
+                "projectPath": "C:\\Users\\saile\\Documents\\Aplicaciones WEB\\GitHub\\KickDrive\\Models\\Models.csproj"
               }
             }
           }

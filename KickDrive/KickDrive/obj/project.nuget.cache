@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6PoGb8k86esHNYhMORbgdNJeimSq1z360ZwLcN9npHCr8wYpeNackYDc7+rTD4Nc8zpUA9+drNTt/9P53meSOg==",
+  "dgSpecHash": "Ps+cM4yx0SaSB8s98tKTVGfwubwNiQ+WsWfgx/9cyuTe2MJtaNpiQYP/9Bn3k5U7hPwZOJx0e2cWFofeghw/5Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\saile\\Documents\\Aplicaciones WEB\\GitHub\\KickDrive\\KickDrive.csproj",
+  "projectFilePath": "C:\\Users\\saile\\Documents\\Aplicaciones WEB\\GitHub\\KickDrive\\KickDrive\\KickDrive.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\saile\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\saile\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
