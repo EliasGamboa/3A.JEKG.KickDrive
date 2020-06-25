@@ -4,21 +4,49 @@
     ViewData["Title"] = "RegistroVehiculos";
 }
 
-<h1>Registro de Vehiculos</h1>
+<h1>Registro de Vehículos</h1>
 <body>
+    <div style="float:right"><a class="nav-link text-dark" asp-area="" asp-page="/index">Atras</a></div>
     <div>
-        <input type="text" nombreprop="nombreprop" id="nombreprop" placeholder="Ingrese el Nombre del propietario del Vehiculo" size="100" />
-        <input type="text" Automovil="Automovil" id="Automovil" placeholder="Ingrese el automovil a registrar" size="100" />
-        <input type="text" Modelo="Modelo" id="Modelo" placeholder="Ingrese el modelo del automovil" size="100" />
-        <input type="text" NumeroMotor="NumeroMotor" id="Numeromotor" placeholder="Ingrese el numero del motor" size="100" />
-        <input type="text" placas="placas" id="placas" placeholder="Ingrese la placa del automovil" size="100" />
-        <input type="text" uso="uso" id="uso" placeholder="Ingrese el Uso del Automovil" size="100" />
-        <input type="text" largo="largo" id="largo" placeholder="Ingrese el largo del vehiculo" size="100" />
-        <input type="text" alto="alto" id="alto" placeholder="Ingrese el alto del vehiculo" size="100" />
-        <input type="text" ancho="ancho" id="ancho" placeholder="Ingrese el ancho del vehiculo" size="100" />
+        <label>Llene el siguiente formulario</label>
     </div>
-    <button type="submit" value="Registrar">Registrar</button>
-    <button><a class="nav-link text-dark" asp-area="" asp-page="/VehiculosRegistrados">Cancelar</a></button>
+    <div>
+        <div>
+            <label>Ingrese el nombre del propietario</label>
+            <input type="text" class="form-control" aria-label="Small" aria-describedb nombreprop="nombreprop" id="nombreprop" placeholder="Ingrese el Nombre" />
+        </div>
+        <div>
+            <label>Ingrese el modelo del vehículo</label>
+            <input type="text" class="form-control" aria-label="Small" aria-describedb Modelo="Modelo" id="Modelo" placeholder="Ingrese el modelo" />
+        </div>
+        <div>
+            <label>Ingrese el numero de motor</label>
+            <input type="text" class="form-control" aria-label="Small" aria-describedb NumeroMotor="NumeroMotor" id="Numeromotor" placeholder="Ingrese el numero del motor" />
+        </div>
+        <div>
+            <label>Ingrese la placa del vehículo</label>
+            <input type="text" class="form-control" aria-label="Small" aria-describedb placas="placas" id="placas" placeholder="Ingrese la placa" />
+        </div>
+        <div>
+            <label>Ingrese el uso del vehículo</label>
+            <input type="text" class="form-control" aria-label="Small" aria-describedb uso="uso" id="uso" placeholder="Ingrese el Uso" />
+        </div>
+        <div>Ingrese las medidas del vehículo</div>
+        <div>
+            <label>Ingrese el largo del vehículo</label>
+            <input type="text" class="form-control" aria-label="Small" aria-describedb largo="largo" id="largo" placeholder="Ingrese el largo del vehiculo" />
+        </div>
+        <div>
+            <label>Ingrese el alto del Vehículo</label>
+            <input type="text" class="form-control" aria-label="Small" aria-describedb alto="alto" id="alto" placeholder="Ingrese el alto del vehiculo" />
+        </div>
+        <div>
+            <label>Ingrese el ancho del vehículo</label>
+            <input type="text" class="form-control" aria-label="Small" aria-describedb ancho="ancho" id="ancho" placeholder="Ingrese el ancho del vehiculo" />
+        </div>
+    </div>
+    <btn type="submit" class="btn btn-primary" value="Registrar">Registrar</btn>
+    <
 </body>
 
 

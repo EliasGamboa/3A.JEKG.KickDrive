@@ -11,7 +11,7 @@ namespace Service
         {
             _vehiculos = new List<Vehiculo>()
             {
-                new Vehiculo {NombreProp = "Eduardo Alegre", Automovil = "Dodge Attitude", Modelo = "Sedan", NumeroMotor = "F9D55F8F789", placas = "EDU-A3L", uso = "Transporte Publico", largo = "4,245 mm", alto = "1,515 mm", ancho = "1,670 mm" }
+                new Vehiculo {NombreProp = "Eduardo Alegre", Automovil = "Dodge Attitude", Modelo = "Sedan", NumeroMotor = "F9D55F8F789", Placas = "EDU-A3L", Uso = "Transporte Publico", Largo = "4,245 mm", Alto = "1,515 mm", Ancho = "1,670 mm" }
             };
         }
         public IEnumerable<Vehiculo> getall()

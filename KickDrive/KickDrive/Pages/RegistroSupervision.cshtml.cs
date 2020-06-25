@@ -4,14 +4,12 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Service;
-using Models;
 
 namespace KickDrive.Pages
 {
-    public class RegistroModel : PageModel
+    public class RegistroSupervisionModel : PageModel
     {
-        public void onGet()
+        public void OnGet()
         {
 
         }

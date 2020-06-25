@@ -1,0 +1,41 @@
+﻿@page
+@model KickDrive.Pages.RegistroSupervisionModel
+@{
+    ViewData["Title"] = "RegistroSupervision";
+}
+
+<h1>Registro Supervisión</h1>
+
+
+<body>
+    <div style="float:right"><a class="nav-link text-dark" asp-area="" asp-page="/index">Atras</a></div>
+    <div>
+        <div>Llene el siguiente formulario (Si tiene * no se puede omitir)</div>
+        <div>
+            <label>Ingrese el Nombre del Supervisor*</label>
+            <input type="text" class="form-control" aria-label="Small" aria-describedb nombresup="nombresup" id="nombresup" placeholder="Ingrese el Nombre" />
+        </div>
+        <div>
+            <label>Ingrese el ID del supervisor*</label>
+            <input type="text" class="form-control" aria-label="Small" aria-describedb Numsupervisor="numsupervisor" id="numsupervisor" placeholder="Ingrese el ID" />
+        </div>
+        <div>
+            <label>Ingrese la ruta que supervisa*</label>
+            <input type="text" class="form-control" aria-label="Small" aria-describedb Ruta="ruta" id="ruta" placeholder="Ingrese la ruta" />
+        </div>
+        <div>
+            <label>Ingrese el ID del conductor*</label>
+            <input type="text" class="form-control" aria-label="Small" aria-describedb Numsupervisor="numsupervisor" id="numsupervisor" placeholder="Ingrese el ID" />
+        </div>
+        <div>
+            <label>Ingrese el nombre del conductor*</label>
+            <input type="text" class="form-control" aria-label="Small" aria-describedb Nombrecond="Nombrecond" id="nombrecond" placeholder="Ingrese el nombre" />
+        </div>
+        <div>
+            <label>Ingrese si hubo algun incidente</label>
+            <input type="text" class="form-control" aria-label="Small" aria-describedb placas="placas" id="placas" placeholder="Incidentes" />
+        </div>
+    </div>
+    <btn type="submit" class="btn btn-primary" value="Registrar">Registrar</btn>
+
+</body>

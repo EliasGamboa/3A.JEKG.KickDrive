@@ -114,4 +114,5 @@ C:\Users\saile\Documents\Aplicaciones WEB\GitHub\KickDrive\KickDrive\obj\Debug\n
 C:\Users\saile\Documents\Aplicaciones WEB\GitHub\KickDrive\KickDrive\obj\Debug\netcoreapp3.1\KickDrive.dll
 C:\Users\saile\Documents\Aplicaciones WEB\GitHub\KickDrive\KickDrive\obj\Debug\netcoreapp3.1\KickDrive.pdb
 C:\Users\saile\Documents\Aplicaciones WEB\GitHub\KickDrive\KickDrive\obj\Debug\netcoreapp3.1\KickDrive.genruntimeconfig.cache
-C:\Users\saile\Documents\Aplicaciones WEB\GitHub\KickDrive\KickDrive\obj\Debug\netcoreapp3.1\Razor\Pages\Registro.cshtml.g.cs
+C:\Users\saile\Documents\Aplicaciones WEB\GitHub\KickDrive\KickDrive\obj\Debug\netcoreapp3.1\Razor\Pages\Login.cshtml.g.cs
+C:\Users\saile\Documents\Aplicaciones WEB\GitHub\KickDrive\KickDrive\obj\Debug\netcoreapp3.1\Razor\Pages\RegistroSupervision.cshtml.g.cs

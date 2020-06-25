@@ -9,14 +9,14 @@ namespace Models
         public string Automovil { get; set; }
         public string Modelo { get; set; }
         public string FechaExpedicion { get; set; }
-        public string vigencia { get; set; }
+        public string Vigencia { get; set; }
         public string NumeroMotor { get; set; }
-        public string combustible { get; set; }
-        public string ancho { get; set; }
-        public string largo { get; set; }
-        public string alto { get; set; }
-        public string uso { get; set; }
-        public string placas { get; set; }
+        public string Combustible { get; set; }
+        public string Ancho { get; set; }
+        public string Largo { get; set; }
+        public string Alto { get; set; }
+        public string Uso { get; set; }
+        public string Placas { get; set; }
         public string ItemModelNumber { get; set; } 
         public string PhotoBusiness { get; set; }
     }
