@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Models
 {
-   public class Supervisor
+   public class Supervisor : BaseEntity
     {
         public string Nombre { get; set; }
         

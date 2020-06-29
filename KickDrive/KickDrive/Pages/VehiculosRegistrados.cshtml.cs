@@ -11,16 +11,16 @@ namespace KickDrive.Pages
 {
     public class VehiculosRegistradosModel : PageModel
     {
-        private readonly IRepository1 repository1;
+        private readonly IRepository1<Vehiculo> repository1;
         public IEnumerable<Vehiculo> Vehiculos { get; set; }
 
-        public VehiculosRegistradosModel(IRepository1 repository1)
+        public VehiculosRegistradosModel(IRepository1<Vehiculo> repository1)
         {
             this.repository1 = repository1;
         }
         public void OnGet()
         {
-            Vehiculos = repository1.getall();
+            Vehiculos = repository1.GetAll();
         }
     }
 }

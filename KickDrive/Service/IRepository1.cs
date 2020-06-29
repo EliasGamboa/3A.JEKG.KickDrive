@@ -5,9 +5,13 @@ using System.Text;
 
 namespace Service
 {
-    public interface IRepository1
+    public interface IRepository1<T> where T : BaseEntity
     {
-        public IEnumerable<Vehiculo> getall();
+        public IEnumerable<T> GetAll();
+        public T Get(int id);
+        public int Insert(T obj);
+        public void Update(T obj);
+        public void Delete(T obj);
 
     }
 }

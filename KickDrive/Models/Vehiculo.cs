@@ -1,8 +1,12 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Models
 {
-    public class Vehiculo
+    public class Vehiculo : BaseEntity
     {
         public int VehiculoId { get; set; }
         public string NombreProp { get; set; }
@@ -19,5 +23,14 @@ namespace Models
         public string Placas { get; set; }
         public string ItemModelNumber { get; set; } 
         public string PhotoBusiness { get; set; }
+        public int NumeroCamion { get; set; }
+
+        [Display(Name = "Conducor")]
+        [Required(ErrorMessage = "Conductor es requerido")]
+        [ForeignKey("Conductor")]
+        public int? ConductorId { get; set; }
+        public Conductor Conductor { get; set; }
+
+        public ICollection<Conductor> Conductors { get; set; }
     }
 }

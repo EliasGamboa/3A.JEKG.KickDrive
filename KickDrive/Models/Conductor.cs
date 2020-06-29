@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
 namespace Models
 {
-    public class Conductor
+    public class Conductor : BaseEntity
     {
         public string ConductorId { get; set; }
         public string Nombre { get; set; }
@@ -16,7 +18,8 @@ namespace Models
         public string LicenciaConducir { get; set; }
         public string SeguroSocial { get; set; }
         public string Fotografia { get; set; }
-        public int NumeroCamion { get; set; }
 
+       
+        
     }
 }

@@ -10,3 +10,18 @@ C:\Users\saile\Documents\Aplicaciones WEB\GitHub\KickDrive\Service\obj\Debug\net
 C:\Users\saile\Documents\Aplicaciones WEB\GitHub\KickDrive\Service\obj\Debug\netcoreapp3.1\Service.csproj.CopyComplete
 C:\Users\saile\Documents\Aplicaciones WEB\GitHub\KickDrive\Service\obj\Debug\netcoreapp3.1\Service.dll
 C:\Users\saile\Documents\Aplicaciones WEB\GitHub\KickDrive\Service\obj\Debug\netcoreapp3.1\Service.pdb
+C:\Users\saile\Downloads\3A.JEKG.KickDrive-master\3A.JEKG.KickDrive-master\KickDrive\Service\bin\Debug\netcoreapp3.1\Service.deps.json
+C:\Users\saile\Downloads\3A.JEKG.KickDrive-master\3A.JEKG.KickDrive-master\KickDrive\Service\bin\Debug\netcoreapp3.1\Service.dll
+C:\Users\saile\Downloads\3A.JEKG.KickDrive-master\3A.JEKG.KickDrive-master\KickDrive\Service\bin\Debug\netcoreapp3.1\Service.pdb
+C:\Users\saile\Downloads\3A.JEKG.KickDrive-master\3A.JEKG.KickDrive-master\KickDrive\Service\bin\Debug\netcoreapp3.1\Models.dll
+C:\Users\saile\Downloads\3A.JEKG.KickDrive-master\3A.JEKG.KickDrive-master\KickDrive\Service\bin\Debug\netcoreapp3.1\Models.pdb
+C:\Users\saile\Downloads\3A.JEKG.KickDrive-master\3A.JEKG.KickDrive-master\KickDrive\Service\obj\Debug\netcoreapp3.1\Service.csprojAssemblyReference.cache
+C:\Users\saile\Downloads\3A.JEKG.KickDrive-master\3A.JEKG.KickDrive-master\KickDrive\Service\obj\Debug\netcoreapp3.1\Service.AssemblyInfoInputs.cache
+C:\Users\saile\Downloads\3A.JEKG.KickDrive-master\3A.JEKG.KickDrive-master\KickDrive\Service\obj\Debug\netcoreapp3.1\Service.AssemblyInfo.cs
+C:\Users\saile\Downloads\3A.JEKG.KickDrive-master\3A.JEKG.KickDrive-master\KickDrive\Service\obj\Debug\netcoreapp3.1\Service.csproj.CopyComplete
+C:\Users\saile\Downloads\3A.JEKG.KickDrive-master\3A.JEKG.KickDrive-master\KickDrive\Service\obj\Debug\netcoreapp3.1\Service.dll
+C:\Users\saile\Downloads\3A.JEKG.KickDrive-master\3A.JEKG.KickDrive-master\KickDrive\Service\obj\Debug\netcoreapp3.1\Service.pdb
+C:\Users\saile\Downloads\3A.JEKG.KickDrive-master\3A.JEKG.KickDrive-master\KickDrive\Service\obj\Debug\netcoreapp3.1\Service.csproj.CoreCompileInputs.cache
+C:\Users\saile\Downloads\3A.JEKG.KickDrive-master\3A.JEKG.KickDrive-master\KickDrive\Service\bin\Debug\netcoreapp3.1\Service.runtimeconfig.json
+C:\Users\saile\Downloads\3A.JEKG.KickDrive-master\3A.JEKG.KickDrive-master\KickDrive\Service\bin\Debug\netcoreapp3.1\Service.runtimeconfig.dev.json
+C:\Users\saile\Downloads\3A.JEKG.KickDrive-master\3A.JEKG.KickDrive-master\KickDrive\Service\obj\Debug\netcoreapp3.1\Service.genruntimeconfig.cache
