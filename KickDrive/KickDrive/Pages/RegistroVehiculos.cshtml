@@ -6,47 +6,60 @@
 
 <h1>Registro de Vehículos</h1>
 <body>
-    <div style="float:right"><a class="nav-link text-dark" asp-area="" asp-page="/index">Atras</a></div>
+    
+        <div style="float:right"><a class="nav-link text-dark" asp-area="" asp-page="/index">Atras</a></div>
+        <div>
+            <label>Llene el siguiente formulario</label>
+        </div>
+    <form class="mt-3" method="post">
     <div>
-        <label>Llene el siguiente formulario</label>
+        <div class="row form-group">
+            <label class="col-form-label col-sm-2" asp-for="Vehiculo.NumeroCamion">Ingrese el número del camión</label>
+                <input type="text" class="form-control form-text" asp-for="Vehiculo.NumeroCamion" role="textbox" aria-label="Small" aria-describedb NumeroCamion="NumeroCamion" id="NumeroCamion" placeholder="Ingrese el número del camión" />
+            </div>
+        <div class="row form-group">
+            <label class="col-form-label col-sm-2" asp-for="Vehiculo.NombreProp">Ingrese el nombre del propietario</label>
+            <input type="text" class="form-control form-text" asp-for="Vehiculo.NombreProp" role="textbox" aria-label="Small" aria-describedb NombreProp="NombreProp" id="NombreProp" placeholder="Ingrese el nombre del propietario" />
+        </div>
+        <div class="row form-group">
+            <label class="col-form-label col-sm-2" asp-for="Vehiculo.Automovil">Ingrese el tipo de vehículo</label>
+            <input type="text" class="form-control form-text" asp-for="Vehiculo.Automovil" role="textbox" aria-label="Small" aria-describedb Automovil="Automovil" id="Automovil" placeholder="Ingrese el tipo de Vehículo" />
+        </div>
+        <div class="row form-group">
+            <label class="col-form-label col-sm-2" asp-for="Vehiculo.Modelo">Ingrese el modelo del vehículo</label>
+            <input type="text" class="form-control form-text" asp-for="Vehiculo.Modelo" role="textbox" aria-label="Small" aria-describedb Modelo="Modelo" id="Modelo" placeholder="Ingrese el modelo" />
+        </div>
+        <div class="row form-group">
+            <label class="col-form-label col-sm-2" asp-for="Vehiculo.NumeroMotor">Ingrese el numero de motor</label>
+            <input type="text" class="form-control form-text" asp-for="Vehiculo.NumeroMotor" role="textbox" aria-label="Small" aria-describedb NumeroMotor="NumeroMotor" id="Numeromotor" placeholder="Ingrese el numero del motor" />
+        </div>
+        <div class="row form-group">
+            <label class="col-form-label col-sm-2" asp-for="Vehiculo.Largo">Ingrese el largo del vehículo</label>
+            <input type="text" class="form-control form-text" asp-for="Vehiculo.Largo" role="textbox" aria-label="Small" aria-describedb largo="largo" id="largo" placeholder="Ingrese el largo del vehiculo" />
+        </div>
+        <div class="row form-group">
+            <label class="col-form-label col-sm-2" asp-for="Vehiculo.Alto">Ingrese el alto del Vehículo</label>
+            <input type="text" class="form-control form-text" asp-for="Vehiculo.Alto" role="textbox" aria-label="Small" aria-describedb alto="alto" id="alto" placeholder="Ingrese el alto del vehiculo" />
+        </div>
+        <div class="row form-group">
+            <label class="col-form-label col-sm-2" asp-for="Vehiculo.Ancho">Ingrese el ancho del vehículo</label>
+            <input type="text" class="form-control form-text" asp-for="Vehiculo.Ancho" role="textbox" aria-label="Small" aria-describedb ancho="ancho" id="ancho" placeholder="Ingrese el ancho del vehiculo" />
+        </div>
+        <div class="row form-group">
+            <label class="col-form-label col-sm-2" asp-for="Vehiculo.Uso">Ingrese el uso del vehículo</label>
+            <input type="text" class="form-control form-text" asp-for="Vehiculo.Uso" role="textbox" aria-label="Small" aria-describedb uso="uso" id="uso" placeholder="Ingrese el Uso" />
+        </div>
+        <div class="row form-group">
+            <label class="col-form-label col-sm-2" asp-for="Vehiculo.Placas">Ingrese la placa del vehículo</label>
+            <input type="text" class="form-control form-text" asp-for="Vehiculo.Placas" role="textbox" aria-label="Small" aria-describedb placas="placas" id="placas" placeholder="Ingrese la placa" />
+        </div>
+
     </div>
-    <div>
-        <div>
-            <label>Ingrese el nombre del propietario</label>
-            <input type="text" class="form-control" aria-label="Small" aria-describedb nombreprop="nombreprop" id="nombreprop" placeholder="Ingrese el Nombre" />
-        </div>
-        <div>
-            <label>Ingrese el modelo del vehículo</label>
-            <input type="text" class="form-control" aria-label="Small" aria-describedb Modelo="Modelo" id="Modelo" placeholder="Ingrese el modelo" />
-        </div>
-        <div>
-            <label>Ingrese el numero de motor</label>
-            <input type="text" class="form-control" aria-label="Small" aria-describedb NumeroMotor="NumeroMotor" id="Numeromotor" placeholder="Ingrese el numero del motor" />
-        </div>
-        <div>
-            <label>Ingrese la placa del vehículo</label>
-            <input type="text" class="form-control" aria-label="Small" aria-describedb placas="placas" id="placas" placeholder="Ingrese la placa" />
-        </div>
-        <div>
-            <label>Ingrese el uso del vehículo</label>
-            <input type="text" class="form-control" aria-label="Small" aria-describedb uso="uso" id="uso" placeholder="Ingrese el Uso" />
-        </div>
-        <div>Ingrese las medidas del vehículo</div>
-        <div>
-            <label>Ingrese el largo del vehículo</label>
-            <input type="text" class="form-control" aria-label="Small" aria-describedb largo="largo" id="largo" placeholder="Ingrese el largo del vehiculo" />
-        </div>
-        <div>
-            <label>Ingrese el alto del Vehículo</label>
-            <input type="text" class="form-control" aria-label="Small" aria-describedb alto="alto" id="alto" placeholder="Ingrese el alto del vehiculo" />
-        </div>
-        <div>
-            <label>Ingrese el ancho del vehículo</label>
-            <input type="text" class="form-control" aria-label="Small" aria-describedb ancho="ancho" id="ancho" placeholder="Ingrese el ancho del vehiculo" />
-        </div>
+</form>
+    <div class="d-flex justify-content-end p-2">
+    <button class="btn btn-primary m-2" role="button" type="submit">Registrar</button>
     </div>
-    <btn type="submit" class="btn btn-primary" value="Registrar">Registrar</btn>
-    <
+    <div class="text-danger" asp-validation-summary="All"></div>
 </body>
 
 

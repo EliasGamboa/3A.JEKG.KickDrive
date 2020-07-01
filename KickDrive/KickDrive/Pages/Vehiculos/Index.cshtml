@@ -1,0 +1,57 @@
+﻿@page
+@model KickDrive.Pages.Vehiculos.IndexModel
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Vehiculos Registrados</h1>
+@if(Model.Vehiculos.Any())
+{
+    <table class=" table table-info table-striped">
+        <!--Head-->
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">@Html.DisplayNameFor(x => x.Vehiculos.FirstOrDefault().NumeroCamion)</th>
+                <th scope="col">@Html.DisplayNameFor(x => x.Vehiculos.FirstOrDefault().NombreProp)</th>
+                <th scope="col">@Html.DisplayNameFor(x => x.Vehiculos.FirstOrDefault().Automovil)</th>
+                <th scope="col">@Html.DisplayNameFor(x => x.Vehiculos.FirstOrDefault().Modelo)</th>
+                <th scope="col">@Html.DisplayNameFor(x => x.Vehiculos.FirstOrDefault().NumeroMotor)</th>
+                <th scope="col">@Html.DisplayNameFor(x => x.Vehiculos.FirstOrDefault().Largo)</th>
+                <th scope="col">@Html.DisplayNameFor(x => x.Vehiculos.FirstOrDefault().Ancho)</th>
+                <th scope="col">@Html.DisplayNameFor(x => x.Vehiculos.FirstOrDefault().Alto)</th>
+                <th scope="col">@Html.DisplayNameFor(x => x.Vehiculos.FirstOrDefault().Uso)</th>
+                <th scope="col">@Html.DisplayNameFor(x => x.Vehiculos.FirstOrDefault().Placas)</th>
+            </tr>
+        </thead>
+        <!--Body-->
+        <tbody>
+            @foreach (var item in Model.Vehiculos)
+            {
+            <tr>
+                <td scope="row">@Html.DisplayFor(m => item.NumeroCamion)</td>
+                <td>@Html.DisplayFor(m => item.NombreProp)</td>
+                <td>@Html.DisplayFor(m => item.Automovil)</td>
+                <td>@Html.DisplayFor(m => item.Modelo)</td>
+                <td>@Html.DisplayFor(m => item.NumeroMotor)</td>
+                <td>@Html.DisplayFor(m => item.Largo)</td>
+                <td>@Html.DisplayFor(m => item.Alto)</td>
+                <td>@Html.DisplayFor(m => item.Ancho)</td>
+                <td>@Html.DisplayFor(m => item.Uso)</td>
+                <td>@Html.DisplayFor(m => item.Placas)</td>
+            </tr>
+            }
+        </tbody>
+    </table> 
+}
+else
+{
+    <div class="mx-auto text-center">
+        <span class="text-danger">No se encontraron Vehículos</span>
+    </div>
+}
+<body>
+    <div>
+        <a class="nav-link text-dark" asp-area="" asp-page="/RegistroVehiculos">Registrar Vehiculos</a>
+    </div>
+</body>
+

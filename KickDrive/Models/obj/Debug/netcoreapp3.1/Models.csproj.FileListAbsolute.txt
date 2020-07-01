@@ -19,3 +19,6 @@ C:\Users\saile\Downloads\3A.JEKG.KickDrive-master\3A.JEKG.KickDrive-master\KickD
 C:\Users\saile\Downloads\3A.JEKG.KickDrive-master\3A.JEKG.KickDrive-master\KickDrive\Models\bin\Debug\netcoreapp3.1\Models.runtimeconfig.dev.json
 C:\Users\saile\Downloads\3A.JEKG.KickDrive-master\3A.JEKG.KickDrive-master\KickDrive\Models\obj\Debug\netcoreapp3.1\Models.genruntimeconfig.cache
 C:\Users\saile\Downloads\3A.JEKG.KickDrive-master\3A.JEKG.KickDrive-master\KickDrive\Models\obj\Debug\netcoreapp3.1\Models.csproj.CoreCompileInputs.cache
+C:\Users\saile\Documents\Aplicaciones WEB\GitHub\KickDrive\Models\bin\Debug\netcoreapp3.1\Models.runtimeconfig.json
+C:\Users\saile\Documents\Aplicaciones WEB\GitHub\KickDrive\Models\bin\Debug\netcoreapp3.1\Models.runtimeconfig.dev.json
+C:\Users\saile\Documents\Aplicaciones WEB\GitHub\KickDrive\Models\obj\Debug\netcoreapp3.1\Models.genruntimeconfig.cache

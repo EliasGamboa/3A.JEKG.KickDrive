@@ -7185,11 +7185,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\saile\\Downloads\\3A.JEKG.KickDrive-master\\3A.JEKG.KickDrive-master\\KickDrive\\Models\\Models.csproj",
+      "projectUniqueName": "C:\\Users\\saile\\Documents\\Aplicaciones WEB\\GitHub\\KickDrive\\Models\\Models.csproj",
       "projectName": "Models",
-      "projectPath": "C:\\Users\\saile\\Downloads\\3A.JEKG.KickDrive-master\\3A.JEKG.KickDrive-master\\KickDrive\\Models\\Models.csproj",
+      "projectPath": "C:\\Users\\saile\\Documents\\Aplicaciones WEB\\GitHub\\KickDrive\\Models\\Models.csproj",
       "packagesPath": "C:\\Users\\saile\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\saile\\Downloads\\3A.JEKG.KickDrive-master\\3A.JEKG.KickDrive-master\\KickDrive\\Models\\obj\\",
+      "outputPath": "C:\\Users\\saile\\Documents\\Aplicaciones WEB\\GitHub\\KickDrive\\Models\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
