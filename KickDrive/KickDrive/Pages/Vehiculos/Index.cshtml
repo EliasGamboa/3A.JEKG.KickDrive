@@ -21,6 +21,8 @@
                 <th scope="col">@Html.DisplayNameFor(x => x.Vehiculos.FirstOrDefault().Alto)</th>
                 <th scope="col">@Html.DisplayNameFor(x => x.Vehiculos.FirstOrDefault().Uso)</th>
                 <th scope="col">@Html.DisplayNameFor(x => x.Vehiculos.FirstOrDefault().Placas)</th>
+                <th scope="col">@Html.DisplayNameFor(x => x.Vehiculos.FirstOrDefault().VehiculoId)</th>
+                <th scope="col">@Html.DisplayNameFor(x => x.Vehiculos.FirstOrDefault().ConductorId)</th>
             </tr>
         </thead>
         <!--Body-->
@@ -38,6 +40,8 @@
                 <td>@Html.DisplayFor(m => item.Ancho)</td>
                 <td>@Html.DisplayFor(m => item.Uso)</td>
                 <td>@Html.DisplayFor(m => item.Placas)</td>
+                <td>@Html.DisplayFor(m => item.VehiculoId)</td>
+                <td>@Html.DisplayFor(m => item.ConductorId)</td>
             </tr>
             }
         </tbody>
