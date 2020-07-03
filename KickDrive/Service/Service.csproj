@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20200702153146_initialmigration.cs" />
+    <Compile Remove="Migrations\20200702153146_initialmigration.Designer.cs" />
+    <Compile Remove="Migrations\20200702153229_initalmigration.cs" />
+    <Compile Remove="Migrations\20200702153229_initalmigration.Designer.cs" />
     <Compile Remove="MockRegistroRepository2.cs" />
     <Compile Remove="MockVehiculoRepository1.cs" />
   </ItemGroup>

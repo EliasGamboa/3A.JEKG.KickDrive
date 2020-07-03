@@ -65,12 +65,7 @@ namespace Service.Migrations
                     b.Property<DateTime?>("UpdateAT")
                         .HasColumnType("datetime2");
 
-                    b.Property<int?>("VehiculoId")
-                        .HasColumnType("int");
-
                     b.HasKey("Id");
-
-                    b.HasIndex("VehiculoId");
 
                     b.ToTable("Conductors");
                 });
@@ -85,6 +80,15 @@ namespace Service.Migrations
                     b.Property<DateTime>("CreateAT")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("HorarioSupervision")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Incidentes")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("InfoViajes")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Ruta")
                         .HasColumnType("nvarchar(max)");
 
@@ -97,15 +101,6 @@ namespace Service.Migrations
 
                     b.Property<DateTime?>("UpdateAT")
                         .HasColumnType("datetime2");
-
-                    b.Property<string>("horarioSupervision")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("incidentes")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("infoViajes")
-                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -130,9 +125,6 @@ namespace Service.Migrations
                     b.Property<string>("Nombre")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("ProcesoRevisionId")
-                        .HasColumnType("int");
-
                     b.Property<bool>("Status")
                         .HasColumnType("bit");
 
@@ -140,8 +132,6 @@ namespace Service.Migrations
                         .HasColumnType("datetime2");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("ProcesoRevisionId");
 
                     b.ToTable("Supervisors");
                 });
@@ -193,7 +183,6 @@ namespace Service.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int?>("ConductorId")
-                        .IsRequired()
                         .HasColumnType("int");
 
                     b.Property<DateTime>("CreateAT")
@@ -248,13 +237,6 @@ namespace Service.Migrations
                     b.ToTable("Vehiculos");
                 });
 
-            modelBuilder.Entity("Models.Conductor", b =>
-                {
-                    b.HasOne("Models.Vehiculo", null)
-                        .WithMany("Conductors")
-                        .HasForeignKey("VehiculoId");
-                });
-
             modelBuilder.Entity("Models.ProcesoRevision", b =>
                 {
                     b.HasOne("Models.Supervisor", "Supervisor")
@@ -264,20 +246,11 @@ namespace Service.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("Models.Supervisor", b =>
-                {
-                    b.HasOne("Models.ProcesoRevision", null)
-                        .WithMany("Supervisors")
-                        .HasForeignKey("ProcesoRevisionId");
-                });
-
             modelBuilder.Entity("Models.Vehiculo", b =>
                 {
                     b.HasOne("Models.Conductor", "Conductor")
                         .WithMany()
-                        .HasForeignKey("ConductorId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("ConductorId");
                 });
 #pragma warning restore 612, 618
         }

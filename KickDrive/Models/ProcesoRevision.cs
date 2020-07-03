@@ -18,7 +18,5 @@ namespace Models
         [ForeignKey("Supervisor")]
         public int? SupervisorId { get; set; }
         public Supervisor Supervisor { get; set; }
-
-        public ICollection<Supervisor> Supervisors { get; set; }
     }
 }

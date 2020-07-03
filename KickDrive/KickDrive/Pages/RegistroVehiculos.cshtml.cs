@@ -20,9 +20,10 @@ namespace KickDrive.Pages
         [BindProperty]
         public Vehiculo Vehiculo { get; set; }
 
-        public void OnPost (Vehiculo obj)
+        public void OnPost (Vehiculo vehiculo)
         {
-            var id = Repository1.Insert(obj);
+            var id = Repository1.Insert(vehiculo);
         }
+       
     }
 }
