@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gbc86fT7JAT4gNdos4cisQnkqIPJgy5/PNHBIOUy90k4iRTtmEf0/nqRbIfjWBgGBJnJlPOAHYcI+/O/9SVO1g==",
+  "dgSpecHash": "te9c5ESW8XUloHoIkoeeZQcLPndGFx09+DI9BrAbV8jfc0SBhd8DBoxma5RVpEQ4hEWSWT2rS+LwEFYHSb6NTA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\saile\\Documents\\Aplicaciones WEB\\GitHub\\KickDrive\\KickDrive\\KickDrive.csproj",
+  "projectFilePath": "C:\\Users\\saile\\Downloads\\KickDrive2\\KickDrive\\KickDrive\\KickDrive\\KickDrive.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\saile\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\saile\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",

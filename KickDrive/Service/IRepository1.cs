@@ -1,5 +1,6 @@
 ﻿using Models;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 
@@ -12,6 +13,5 @@ namespace Service
         public int Insert(T obj);
         public void Update(T obj);
         public void Delete(T obj);
-
     }
 }

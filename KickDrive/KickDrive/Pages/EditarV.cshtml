@@ -1,0 +1,91 @@
+﻿@page
+@model KickDrive.Pages.EditarVModel
+@{
+    ViewData["Title"] = "EditarV";
+}
+
+<meta charset="utf-8" />
+<title>Editar Vehiculo</title>
+<style>
+    .validation-summary-errors {
+        border: 2px dashed red;
+        color: red;
+        font-weight: bold;
+        margin: 12px;
+    }
+</style>
+<body>
+    <h1 align="center">Editar Vehiculo</h1>
+    <form method="post" enctype="multipart/form-data">
+        <fieldset>
+            <h2 align="center">Actualice los datos del vehiculo</h2>
+            <p>
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="Vehiculo.Id" />
+                <div class="form-group">
+                    <label asp-for="Vehiculo.Id" class="control-label">Id</label>
+                    <input asp-for="Vehiculo.Id" disabled class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="Vehiculo.Placas" class="control-label">Placas </label>
+                    <input asp-for="Vehiculo.Placas" class="form-control" />
+                    <span asp-validation-for="Vehiculo.Conductor.Nombre" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Vehiculo.NombreProp" class="control-label">Nombre del Propietario </label>
+                    <input asp-for="Vehiculo.NombreProp" class="form-control" />
+                    <span asp-validation-for="Vehiculo.Conductor.Nombre" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Vehiculo.Largo" class="control-label">Largo del Vehiculo </label>
+                    <input asp-for="Vehiculo.Largo" class="form-control" />
+                    <span asp-validation-for="Vehiculo.Conductor.Nombre" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Vehiculo.Modelo" class="control-label">Modelo del Vehiculo </label>
+                    <input asp-for="Vehiculo.Modelo" class="form-control" />
+                    <span asp-validation-for="Vehiculo.Conductor.Nombre" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Vehiculo.NumeroCamion" class="control-label">Numero del Vehiculo </label>
+                    <input asp-for="Vehiculo.NumeroCamion" class="form-control" />
+                    <span asp-validation-for="Vehiculo.Conductor.Nombre" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Vehiculo.NumeroMotor" class="control-label">Numero del motor </label>
+                    <input asp-for="Vehiculo.NumeroMotor" class="form-control" />
+                    <span asp-validation-for="Vehiculo.Conductor.Nombre" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Vehiculo.Uso" class="control-label">Uso del Vehiculo </label>
+                    <input asp-for="Vehiculo.Uso" class="form-control" />
+                    <span asp-validation-for="Vehiculo.Conductor.Nombre" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Vehiculo.Alto" class="control-label">Alto del vehiculo </label>
+                    <input asp-for="Vehiculo.Alto" class="form-control" />
+                    <span asp-validation-for="Vehiculo.Conductor.Nombre" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Vehiculo.Ancho" class="control-label">Ancho del Vehiculo </label>
+                    <input asp-for="Vehiculo.Ancho" class="form-control" />
+                    <span asp-validation-for="Vehiculo.Conductor.Nombre" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Vehiculo.Automovil" class="control-label">Tipo de automovil </label>
+                    <input asp-for="Vehiculo.Automovil" class="form-control" />
+                    <span asp-validation-for="Vehiculo.Conductor.Nombre" class="text-danger"></span>
+                </div>
+            </p>
+            <div class="col-xs-12 col-md-6"><button type="submit" value="" class="btn btn-success btn-block btn-lg">Guardar</button></div>
+            <div class="col-xs-12 col-md-6"><a asp-page="/VehiculosRegistrados" class="btn btn-primary btn-block btn-lg">Cancelar</a></div>
+
+        </fieldset>
+
+
+    </form>
+    @section Scripts {
+        @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    }
+</body>
+

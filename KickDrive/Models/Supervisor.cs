@@ -8,7 +8,7 @@ namespace Models
     {
         public string Nombre { get; set; }
         
-        public int IdSupervisor { get; set; }
+        
         
 
     }

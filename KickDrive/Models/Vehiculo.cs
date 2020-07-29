@@ -1,11 +1,12 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Models
 {
     public class Vehiculo : BaseEntity
     {
-        public int VehiculoId { get; set; }
+       
         public string NombreProp { get; set; }
         public string Automovil { get; set; }
         public string Modelo { get; set; }

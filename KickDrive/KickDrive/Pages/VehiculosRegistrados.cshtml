@@ -37,6 +37,9 @@
                     <td>@Html.DisplayFor(m => item.Largo)</td>
                     <td>@Html.DisplayFor(m => item.Alto)</td>
                     <td>@Html.DisplayFor(m => item.Ancho)</td>
+                    <td>
+                        <a class="btn btn-success btn-sm" asp-page="./EditarV" asp-route-id="@item.Id">Editar</a>
+                    </td>
                 </tr>
             }
         </tbody>

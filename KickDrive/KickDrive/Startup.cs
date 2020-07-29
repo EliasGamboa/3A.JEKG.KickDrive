@@ -29,8 +29,6 @@ namespace KickDrive
             services.AddRazorPages();
             services.AddScoped<AppDBContext>();
             services.AddScoped(typeof(IRepository1<>), typeof(SQLRepository<>));
-            services.AddScoped(typeof(IRepository2<>), typeof(SQLRepository<>));
-            services.AddScoped(typeof(IRepository3<>), typeof(SQLRepository<>));
             services.AddScoped<IContainerRepository, ContainerRepository>();
             services.AddRouting(option =>
             {

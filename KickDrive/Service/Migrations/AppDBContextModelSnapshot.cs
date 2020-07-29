@@ -32,9 +32,6 @@ namespace Service.Migrations
                     b.Property<string>("ComprobanteDomicilio")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("ConductorId")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<DateTime>("CreateAT")
                         .HasColumnType("datetime2");
 
@@ -96,7 +93,6 @@ namespace Service.Migrations
                         .HasColumnType("bit");
 
                     b.Property<int?>("SupervisorId")
-                        .IsRequired()
                         .HasColumnType("int");
 
                     b.Property<DateTime?>("UpdateAT")
@@ -118,9 +114,6 @@ namespace Service.Migrations
 
                     b.Property<DateTime>("CreateAT")
                         .HasColumnType("datetime2");
-
-                    b.Property<int>("IdSupervisor")
-                        .HasColumnType("int");
 
                     b.Property<string>("Nombre")
                         .HasColumnType("nvarchar(max)");
@@ -224,9 +217,6 @@ namespace Service.Migrations
                     b.Property<string>("Uso")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("VehiculoId")
-                        .HasColumnType("int");
-
                     b.Property<string>("Vigencia")
                         .HasColumnType("nvarchar(max)");
 
@@ -241,9 +231,7 @@ namespace Service.Migrations
                 {
                     b.HasOne("Models.Supervisor", "Supervisor")
                         .WithMany()
-                        .HasForeignKey("SupervisorId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("SupervisorId");
                 });
 
             modelBuilder.Entity("Models.Vehiculo", b =>

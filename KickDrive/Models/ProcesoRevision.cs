@@ -14,7 +14,6 @@ namespace Models
         public string InfoViajes { get; set; }
 
         [Display(Name = "Supervisor")]
-        [Required(ErrorMessage ="Supervisor es requerido")]
         [ForeignKey("Supervisor")]
         public int? SupervisorId { get; set; }
         public Supervisor Supervisor { get; set; }
