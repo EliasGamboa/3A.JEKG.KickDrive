@@ -23,7 +23,7 @@ namespace Models
         public string PhotoBusiness { get; set; }
         public int NumeroCamion { get; set; }
 
-        [Display(Name = "Conducor")]
+        [Display(Name = "Conductor")]
         [ForeignKey("Conductor")]
         public int? ConductorId { get; set; }
         public Conductor Conductor { get; set; }

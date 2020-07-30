@@ -1,0 +1,95 @@
+﻿@page
+@model KickDrive.Pages.EliminarVModel
+@{
+    ViewData["Title"] = "EliminarV";
+}
+
+<h1 align="center">Eliminar Vehiculos</h1>
+<div>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-3">
+            Placas:
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.Vehiculo.Placas)
+        </dd>
+        <dt class="col-sm-3">
+            Nombre Propietario
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.Vehiculo.NombreProp)
+        </dd>
+        <dt class="col-sm-3">
+            Largo del Vehiculo
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.Vehiculo.Largo)
+        </dd>
+        <dt class="col-sm-3">
+            Modelo:
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.Vehiculo.Modelo)
+        </dd>
+        <dt class="col-sm-3">
+            Numero del Vehiculo:
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.Vehiculo.NumeroCamion)
+        </dd>
+        <dt class="col-sm-3">
+            Numero del motor:
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.Vehiculo.NumeroMotor)
+        </dd>
+        <dt class="col-sm-3">
+            Uso:
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.Vehiculo.Uso)
+        </dd>
+        <dt class="col-sm-3">
+            Alto:
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.Vehiculo.Alto)
+        </dd>
+        <dt class="col-sm-3">
+            Ancho:
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.Vehiculo.Ancho)
+        </dd>
+        <dt class="col-sm-3">
+            Tipo de Vehiculo:
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.Vehiculo.Automovil)
+        </dd>
+    </dl>
+    <form method="post">
+        <input type="hidden" asp-for="Vehiculo.Id" />
+        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal">
+            Eliminar
+        </button>
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">¿Seguro que quiere eliminar el vehiculo?</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">Si elimina el Vehiculo no podra recuperarlo de nuevo</div>
+                    <div class="modal-footer">
+                        <input type="submit" value="Eliminar" class="btn btn-danger" />
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="btn btn-secondary" asp-page="./VehiculosRegistrados">Cancelar</a>
+    </form>
+</div>
+

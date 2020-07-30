@@ -1,0 +1,60 @@
+﻿@page
+@model KickDrive.Pages.SupervisionRegistradaModel
+@{
+    ViewData["Title"] = "SupervisionRegistrada";
+}
+
+<h1>Supervisión Registrada</h1>
+
+@if (Model.ProcesoRevisions.Any())
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">@Html.DisplayNameFor(x => x.ProcesoRevisions.FirstOrDefault().SupervisorId)</th>
+                <th scope="col">@Html.DisplayNameFor(x => x.ProcesoRevisions.FirstOrDefault().HorarioSupervision)</th>
+                <th scope="col">@Html.DisplayNameFor(x => x.ProcesoRevisions.FirstOrDefault().Incidentes)</th>
+                <th scope="col">@Html.DisplayNameFor(x => x.ProcesoRevisions.FirstOrDefault().Ruta)</th>
+                <th scope="col">@Html.DisplayNameFor(x => x.ProcesoRevisions.FirstOrDefault().Supervisor)</th>
+                <th scope="col">@Html.DisplayNameFor(x => x.ProcesoRevisions.FirstOrDefault().InfoViajes)</th>
+            </tr>
+        </thead>
+    <tbody id="myTable">
+        @foreach (var item in Model.ProcesoRevisions)
+        {
+        <tr>
+            <th scope="row">@Html.DisplayFor(m => item.SupervisorId)</th>
+            <td>@Html.DisplayFor(m => item.HorarioSupervision)</td>
+            <td>@Html.DisplayFor(m => item.Incidentes)</td>
+            <td>@Html.DisplayFor(m => item.Ruta)</td>
+            <td>@Html.DisplayFor(m => item.Supervisor)</td>
+            <td>@Html.DisplayFor(m => item.Incidentes)</td>
+            <td>
+                <div class="dropdown">
+                    <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">Ver mas</button>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="btn btn-success btn-sm" asp-page="./EditarV" asp-route-id="@item.Id">Editar</a>
+                        </li>
+                        <li>
+                            <a class="btn btn-danger btn-sm" asp-page="./EliminarV" asp-route-id="@item.Id">Eliminar</a>
+                        </li>
+                    </ul>
+                </div>
+            </td>
+        </tr>
+        }
+    </tbody>
+    </table>
+    <body>
+        <a class="nav-link text-dark" asp-area="" asp-page="/RegistroSupervision">Registrar Supervision</a>
+    </body>
+
+}
+else
+{
+<div class="border text-center">
+    <p>No se encontraron contenedores registrados</p>
+        <a class="nav-link text-dark" asp-area="" asp-page="/RegistroSupervision">Registrar Supervision</a>
+</div>
+}

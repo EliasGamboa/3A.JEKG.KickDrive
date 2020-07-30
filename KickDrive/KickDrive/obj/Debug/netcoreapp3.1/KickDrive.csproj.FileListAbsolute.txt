@@ -87,8 +87,6 @@ C:\Users\saile\Documents\Aplicaciones WEB\GitHub\KickDrive\KickDrive\bin\Debug\n
 C:\Users\saile\Documents\Aplicaciones WEB\GitHub\KickDrive\KickDrive\bin\Debug\netcoreapp3.1\Models.pdb
 C:\Users\saile\Documents\Aplicaciones WEB\GitHub\KickDrive\KickDrive\bin\Debug\netcoreapp3.1\Service.pdb
 C:\Users\saile\Documents\Aplicaciones WEB\GitHub\KickDrive\KickDrive\obj\Debug\netcoreapp3.1\KickDrive.csprojAssemblyReference.cache
-C:\Users\saile\Documents\Aplicaciones WEB\GitHub\KickDrive\KickDrive\obj\Debug\netcoreapp3.1\KickDrive.csproj.CoreCompileInputs.cache
-C:\Users\saile\Documents\Aplicaciones WEB\GitHub\KickDrive\KickDrive\obj\Debug\netcoreapp3.1\KickDrive.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\saile\Documents\Aplicaciones WEB\GitHub\KickDrive\KickDrive\obj\Debug\netcoreapp3.1\KickDrive.RazorAssemblyInfo.cache
 C:\Users\saile\Documents\Aplicaciones WEB\GitHub\KickDrive\KickDrive\obj\Debug\netcoreapp3.1\KickDrive.RazorAssemblyInfo.cs
 C:\Users\saile\Documents\Aplicaciones WEB\GitHub\KickDrive\KickDrive\obj\Debug\netcoreapp3.1\KickDrive.AssemblyInfoInputs.cache
@@ -630,3 +628,10 @@ C:\Users\saile\Downloads\KickDrive2\KickDrive\KickDrive\KickDrive\obj\Debug\netc
 C:\Users\saile\Downloads\KickDrive2\KickDrive\KickDrive\KickDrive\obj\Debug\netcoreapp3.1\KickDrive.dll
 C:\Users\saile\Downloads\KickDrive2\KickDrive\KickDrive\KickDrive\obj\Debug\netcoreapp3.1\KickDrive.pdb
 C:\Users\saile\Downloads\KickDrive2\KickDrive\KickDrive\KickDrive\obj\Debug\netcoreapp3.1\KickDrive.genruntimeconfig.cache
+C:\Users\saile\Documents\Aplicaciones WEB\GitHub\KickDrive\KickDrive\obj\Debug\netcoreapp3.1\Razor\Pages\EliminarV.cshtml.g.cs
+C:\Users\saile\Documents\Aplicaciones WEB\GitHub\KickDrive\KickDrive\obj\Debug\netcoreapp3.1\Razor\Pages\SupervisionRegistrada.cshtml.g.cs
+C:\Users\saile\Documents\Aplicaciones WEB\GitHub\KickDrive\KickDrive\bin\Debug\netcoreapp3.1\Syncfusion.Compression.Portable.dll
+C:\Users\saile\Documents\Aplicaciones WEB\GitHub\KickDrive\KickDrive\bin\Debug\netcoreapp3.1\Syncfusion.HtmlConverter.Portable.dll
+C:\Users\saile\Documents\Aplicaciones WEB\GitHub\KickDrive\KickDrive\bin\Debug\netcoreapp3.1\Syncfusion.Pdf.Portable.dll
+C:\Users\saile\Documents\Aplicaciones WEB\GitHub\KickDrive\KickDrive\obj\Debug\netcoreapp3.1\KickDrive.csproj.CoreCompileInputs.cache
+C:\Users\saile\Documents\Aplicaciones WEB\GitHub\KickDrive\KickDrive\obj\Debug\netcoreapp3.1\KickDrive.MvcApplicationPartsAssemblyInfo.cache

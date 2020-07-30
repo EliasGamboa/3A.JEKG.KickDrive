@@ -29,24 +29,34 @@
         <tbody>
             @foreach (var item in Model.Vehiculos)
             {
-			<tr>
-				<th scope="col">@Html.DisplayNameFor(x => x.Vehiculos.FirstOrDefault().Id)</th>
-				<td scope="row">@Html.DisplayFor(m => item.NumeroCamion)</td>
-				<td>@Html.DisplayFor(m => item.NombreProp)</td>
-				<td>@Html.DisplayFor(m => item.Automovil)</td>
-				<td>@Html.DisplayFor(m => item.Modelo)</td>
-				<td>@Html.DisplayFor(m => item.NumeroMotor)</td>
-				<td>@Html.DisplayFor(m => item.Largo)</td>
-				<td>@Html.DisplayFor(m => item.Alto)</td>
-				<td>@Html.DisplayFor(m => item.Ancho)</td>
-				<td>@Html.DisplayFor(m => item.Uso)</td>
-				<td>@Html.DisplayFor(m => item.Placas)</td>
-
-
-				<a class="btn btn-success btn-sm" asp-page="/EditarV" asp-route-id="@item.Id">Editar</a>
-			</tr>
-            }
-        </tbody>
+            <tr>
+                <th scope="col">@Html.DisplayNameFor(x => x.Vehiculos.FirstOrDefault().Id)</th>
+                <td scope="row">@Html.DisplayFor(m => item.NumeroCamion)</td>
+                <td>@Html.DisplayFor(m => item.NombreProp)</td>
+                <td>@Html.DisplayFor(m => item.Automovil)</td>
+                <td>@Html.DisplayFor(m => item.Modelo)</td>
+                <td>@Html.DisplayFor(m => item.NumeroMotor)</td>
+                <td>@Html.DisplayFor(m => item.Largo)</td>
+                <td>@Html.DisplayFor(m => item.Alto)</td>
+                <td>@Html.DisplayFor(m => item.Ancho)</td>
+                <td>@Html.DisplayFor(m => item.Uso)</td>
+                <td>@Html.DisplayFor(m => item.Placas)</td>
+                <td>
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">Ver mas</button>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="btn btn-success btn-sm" asp-page="/EditarV" asp-route-id="@item.Id">Editar</a>
+                            </li>
+                            <li>
+                                <a class="btn btn-danger btn-sm" asp-page="/EliminarV" asp-route-id="@item.Id">Eliminar</a>
+                            </li>
+                        </ul>
+                    </div>
+                </td>
+                </tr>
+                }
+</tbody>
     </table> 
 }
 else
@@ -58,6 +68,9 @@ else
 <body>
     <div>
         <a class="nav-link text-dark" asp-area="" asp-page="/RegistroVehiculos">Registrar Vehiculos</a>
+    </div>
+    <div>
+        <button class="btn btn-sm" asp-page-handler="Vehiculos">Reporte</button>
     </div>
 </body>
 

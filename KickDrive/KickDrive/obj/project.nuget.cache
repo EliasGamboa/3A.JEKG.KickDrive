@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "te9c5ESW8XUloHoIkoeeZQcLPndGFx09+DI9BrAbV8jfc0SBhd8DBoxma5RVpEQ4hEWSWT2rS+LwEFYHSb6NTA==",
+  "dgSpecHash": "4LwQna2p1am6+4XGNkJmX2jKlgaxcY1OruB07Ezsd2E4/QUT733JDFIcQby+N1uk7R7zOrlwRtp3KYn6tu5e4Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\saile\\Downloads\\KickDrive2\\KickDrive\\KickDrive\\KickDrive\\KickDrive.csproj",
+  "projectFilePath": "C:\\Users\\saile\\Documents\\Aplicaciones WEB\\GitHub\\KickDrive\\KickDrive\\KickDrive.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\saile\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\saile\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",
@@ -98,6 +98,7 @@
     "C:\\Users\\saile\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\saile\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\saile\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\saile\\.nuget\\packages\\syncfusion.htmltopdfconverter.qtwebkit.net.core\\18.2.0.44\\syncfusion.htmltopdfconverter.qtwebkit.net.core.18.2.0.44.nupkg.sha512",
     "C:\\Users\\saile\\.nuget\\packages\\system.appcontext\\4.3.0\\system.appcontext.4.3.0.nupkg.sha512",
     "C:\\Users\\saile\\.nuget\\packages\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
     "C:\\Users\\saile\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
