@@ -14,10 +14,10 @@
     }
 </style>
 <body>
-    <h1 align="center">Editar Vehiculo</h1>
+    <h1 align="center">Editar Proceso de Revision</h1>
     <form method="post" enctype="multipart/form-data">
         <fieldset>
-            <h2 align="center">Actualice los datos del vehiculo</h2>
+            <h2 align="center">Actualice los datos del Proceso de revision</h2>
             <p>
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 <input type="hidden" asp-for="ProcesoRevision.Id" />
@@ -26,22 +26,22 @@
                     <input asp-for="ProcesoRevision.SupervisorId" disabled class="form-control" />
                 </div>
                 <div class="form-group">
-                    <label asp-for="ProcesoRevision.HorarioSupervision" class="control-label">Placas </label>
+                    <label asp-for="ProcesoRevision.HorarioSupervision" class="control-label">Horario de supervision </label>
                     <input asp-for="ProcesoRevision.HorarioSupervision" class="form-control" />
                     <span asp-validation-for="ProcesoRevision.Supervisor.Nombre" class="text-danger"></span>
                 </div>
                 <div class="form-group">
-                    <label asp-for="ProcesoRevision.Incidentes" class="control-label">Nombre del Propietario </label>
+                    <label asp-for="ProcesoRevision.Incidentes" class="control-label">Incidentes </label>
                     <input asp-for="ProcesoRevision.Incidentes" class="form-control" />
                     <span asp-validation-for="ProcesoRevision.Supervisor.Nombre" class="text-danger"></span>
                 </div>
                 <div class="form-group">
-                    <label asp-for="ProcesoRevision.Ruta" class="control-label">Largo del Vehiculo </label>
+                    <label asp-for="ProcesoRevision.Ruta" class="control-label">Ruta </label>
                     <input asp-for="ProcesoRevision.Ruta" class="form-control" />
                     <span asp-validation-for="ProcesoRevision.Supervisor.Nombre" class="text-danger"></span>
                 </div>
                 <div class="form-group">
-                    <label asp-for="ProcesoRevision.InfoViajes" class="control-label">Modelo del Vehiculo </label>
+                    <label asp-for="ProcesoRevision.InfoViajes" class="control-label">Informacion de viajes </label>
                     <input asp-for="ProcesoRevision.InfoViajes" class="form-control" />
                     <span asp-validation-for="ProcesoRevision.Supervisor.Nombre" class="text-danger"></span>
                 </div>
