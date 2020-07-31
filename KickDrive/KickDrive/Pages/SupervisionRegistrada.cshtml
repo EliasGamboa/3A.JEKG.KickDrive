@@ -55,10 +55,10 @@
                     <td>@Html.DisplayFor(modelItem => item.Supervisor)</td>
                     <td>@Html.DisplayFor(modelItem => item.InfoViajes)</td>
                     <td>
-                        <a asp-page="/EditarS" asp-route-Id="@item.Id" class="dropdown-item">Editar</a>
+                        <a asp-page="/EditarS" asp-route-Id="@item.Id" class="btn btn-info">Editar</a>
                     </td>
                     <td>
-                        <a asp-page="/EliminarS" asp-route-Id="@item.Id" class="dropdown-item">Eliminar</a>
+                        <a asp-page="/EliminarS" asp-route-Id="@item.Id" class="btn btn-danger">Eliminar</a>
 
                     </td>
                 </tr>
