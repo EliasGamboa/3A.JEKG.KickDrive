@@ -6,115 +6,107 @@
 
 <h1>Vehiculos Registrados</h1>
 <header>
-	<script src="~/js/jspdf.debug.js"></script>
-	<script src="~/js/JavaScript1.js"></script>
+    <script src="~/js/jspdf.debug.js"></script>
+    <script src="~/js/JavaScript1.js"></script>
 </header>
 
 
 <body style="margin-right:50px; background-color:white; margin-left:50px; margin-top:25px; border:double; border-color:darkmagenta;">
-	<h2>Administración de Empresas</h2>
+    <h2>Administración de Empresas</h2>
 
-	<form>
-		<p>
-			Busqueda por Nombre: <input type="text" asp-for="SearchString" />
-			<input class="btn btn-outline-primary btn-sm" type="submit" value="Buscar" />
-		</p>
-	</form>
+    
 
-	<p>
-		<a class="btn btn-primary" asp-page="Create">Registrar Vehiculo</a>
-	</p>
-	<div id="customers">
-		<table id="tab_customers" class="table-striped sortable table">
-			<colgroup>
-				<col width="12.5%">
-				<col width="12.5%">
-				<col width="12.5%">
-				<col width="12.5%">
-				<col width="12.5%">
-				<col width="12.5%">
-				<col width="12.5%">
-				<col width="12.5%">
-				
+    <p>
+        <a class="btn btn-primary" asp-page="Create">Registrar Vehiculo</a>
+    </p>
+    <div id="customers">
+        <table id="tab_customers" class="table-striped sortable table">
+            <colgroup>
+                <col style="width:auto; height:auto">
+                <col style="width:auto; height:auto">
+                <col style="width:auto; height:auto">
+                <col style="width:auto; height:auto">
+                <col style="width:auto; height:auto">
+                <col style="width:auto; height:auto">
+                <col style="width:auto; height:auto">
+                <col style="width:auto; height:auto">
 
 
 
-			</colgroup>
-			<thead>
-				<tr>
-					<th>Id </th>
-					<th>Numero</th>
-					<th>conductor</th>
-					<th>Nombre propietario</th>
-					<th>automivol</th>
-					<th>Modelo</th>
-					<th>Numero Motor</th>
-					<th>placas </th>
-					
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>Id </th>
+                    <th>Numero</th>
+                    <th>conductor</th>
+                    <th>Nombre propietario</th>
+                    <th>automivol</th>
+                    <th>Modelo</th>
+                    <th>Numero Motor</th>
+                    <th>placas</th>
 
-				</tr>
-			</thead>
-			<tbody>
-
-
-			 @foreach (var item in Model.Vehiculos)
-					 {
-				<tr>
-					<td>@Html.DisplayFor(modelItem => item.Id)</td>
-					<td>@Html.DisplayFor(modelItem => item.NumeroCamion)</td>
-					<td>@Html.DisplayFor(modelItem => item.Conductor.Nombre)</td>
-					<td>@Html.DisplayFor(modelItem => item.NombreProp)</td>
-					<td>@Html.DisplayFor(modelItem => item.Automovil)</td>
-					<td>@Html.DisplayFor(modelItem => item.Modelo)</td>
-					<td>@Html.DisplayFor(modelItem => item.NumeroMotor)</td>
-					
-					<td>@Html.DisplayFor(modelItem => item.Placas)</td>
-				</tr>
-						
-			  }
-			</tbody>
-		</table>
-	</div>
-
-	<div>
-		<button style="width : 100px; heigth : 1px " class="btn btn-success form-control" onclick="javascript:demoFromHTML()">Descargar PDF</button>
-	</div>
-
-	@section Scripts{
-
-		<script type="text/javascript">
-			function demoFromHTML() {
-				var pdf = new jsPDF('l', 'mm',  "legal");
-
-				source = $('#customers')[0];
+                </tr>
+            </thead>
+            <tbody>
 
 
-				specialElementHandlers = {
+                @foreach (var item in Model.Vehiculos)
+                {
+                    <tr>
+                        <td>@Html.DisplayFor(modelItem => item.Id)</td>
+                        <td>@Html.DisplayFor(modelItem => item.NumeroCamion)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Conductor.Nombre)</td>
+                        <td>@Html.DisplayFor(modelItem => item.NombreProp)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Automovil)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Modelo)</td>
+                        <td>@Html.DisplayFor(modelItem => item.NumeroMotor)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Placas)</td>
+                    </tr>
 
-					'#bypassme': function (element, renderer) {
+                }
+            </tbody>
+        </table>
+    </div>
 
-						return true
-					}
-				};
-				margins = {
-					bottom: 10,
-					left: 10,
-					width: 400
-				};
+    <div>
+        <button style="width : 100px; heigth : 1px " class="btn btn-success form-control" onclick="javascript:demoFromHTML()">Descargar PDF</button>
+    </div>
 
-				pdf.fromHTML(
-					source,
-					margins.left,
-					margins.top, {
-					'width': margins.width,
-					'elementHandlers': specialElementHandlers
-				    },
-					function (dispose) {
+    @section Scripts{
 
-						pdf.save('Kick.pdf');
-					}
-					, margins);
-			}
-		</script>
-}
+        <script type="text/javascript">
+            function demoFromHTML() {
+                var pdf = new jsPDF('l', 'mm', "legal");
+
+                source = $('#customers')[0];
+
+
+                specialElementHandlers = {
+
+                    '#bypassme': function (element, renderer) {
+
+                        return true
+                    }
+                };
+                margins = {
+                    bottom: 10,
+                    left: 10,
+                    width: 400
+                };
+
+                pdf.fromHTML(
+                    source,
+                    margins.left,
+                    margins.top, {
+                    'width': margins.width,
+                    'elementHandlers': specialElementHandlers
+                },
+                    function (dispose) {
+
+                        pdf.save('Kick.pdf');
+                    }
+                    , margins);
+            }
+        </script>
+    }
 </body>

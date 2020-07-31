@@ -1,0 +1,72 @@
+﻿@page
+@model KickDrive.Pages.EliminarSModel
+@{
+    ViewData["Title"] = "EliminarS";
+}
+
+<h1>Eliminar Supervision</h1>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-3">
+            ID
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.ProcesoRevision.Id)
+        </dd>
+        <dt class="col-sm-3">
+            Incidentes
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.ProcesoRevision.Incidentes)
+        </dd>
+        <dt class="col-sm-3">
+            Informacion de viajes
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.ProcesoRevision.InfoViajes)
+        </dd>
+        <dt class="col-sm-3">
+            Ruta
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.ProcesoRevision.Ruta)
+        </dd>
+        <dt class="col-sm-3">
+            Supervisor
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.ProcesoRevision.Supervisor)
+        </dd>
+        <dt class="col-sm-3">
+            Horario
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.ProcesoRevision.HorarioSupervision)
+        </dd>
+        
+    </dl>
+    <form method="post">
+        <input type="hidden" asp-for="ProcesoRevision.Id" />
+        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal">
+            Eliminar
+        </button>
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">¿Seguro que quiere eliminar la supervision?</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">Si elimina la supervision no podra recuperarlo de nuevo</div>
+                    <div class="modal-footer">
+                        <input type="submit" value="Eliminar" class="btn btn-danger" />
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="btn btn-secondary" asp-page="./VehiculosRegistrados">Cancelar</a>
+    </form>
+</div>

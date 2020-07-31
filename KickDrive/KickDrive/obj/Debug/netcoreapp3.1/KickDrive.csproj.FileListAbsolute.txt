@@ -635,3 +635,5 @@ C:\Users\saile\Documents\Aplicaciones WEB\GitHub\KickDrive\KickDrive\bin\Debug\n
 C:\Users\saile\Documents\Aplicaciones WEB\GitHub\KickDrive\KickDrive\bin\Debug\netcoreapp3.1\Syncfusion.Pdf.Portable.dll
 C:\Users\saile\Documents\Aplicaciones WEB\GitHub\KickDrive\KickDrive\obj\Debug\netcoreapp3.1\KickDrive.csproj.CoreCompileInputs.cache
 C:\Users\saile\Documents\Aplicaciones WEB\GitHub\KickDrive\KickDrive\obj\Debug\netcoreapp3.1\KickDrive.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\saile\Documents\Aplicaciones WEB\GitHub\KickDrive\KickDrive\obj\Debug\netcoreapp3.1\Razor\Pages\EditarS.cshtml.g.cs
+C:\Users\saile\Documents\Aplicaciones WEB\GitHub\KickDrive\KickDrive\obj\Debug\netcoreapp3.1\Razor\Pages\EliminarS.cshtml.g.cs

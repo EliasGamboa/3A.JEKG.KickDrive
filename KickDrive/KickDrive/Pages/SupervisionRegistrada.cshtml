@@ -6,55 +6,107 @@
 
 <h1>Supervisión Registrada</h1>
 
-@if (Model.ProcesoRevisions.Any())
-{
-    <table class="table table-striped">
-        <thead>
-            <tr>
-                <th scope="col">@Html.DisplayNameFor(x => x.ProcesoRevisions.FirstOrDefault().SupervisorId)</th>
-                <th scope="col">@Html.DisplayNameFor(x => x.ProcesoRevisions.FirstOrDefault().HorarioSupervision)</th>
-                <th scope="col">@Html.DisplayNameFor(x => x.ProcesoRevisions.FirstOrDefault().Incidentes)</th>
-                <th scope="col">@Html.DisplayNameFor(x => x.ProcesoRevisions.FirstOrDefault().Ruta)</th>
-                <th scope="col">@Html.DisplayNameFor(x => x.ProcesoRevisions.FirstOrDefault().Supervisor)</th>
-                <th scope="col">@Html.DisplayNameFor(x => x.ProcesoRevisions.FirstOrDefault().InfoViajes)</th>
-            </tr>
-        </thead>
-    <tbody id="myTable">
-        @foreach (var item in Model.ProcesoRevisions)
-        {
-        <tr>
-            <th scope="row">@Html.DisplayFor(m => item.SupervisorId)</th>
-            <td>@Html.DisplayFor(m => item.HorarioSupervision)</td>
-            <td>@Html.DisplayFor(m => item.Incidentes)</td>
-            <td>@Html.DisplayFor(m => item.Ruta)</td>
-            <td>@Html.DisplayFor(m => item.Supervisor)</td>
-            <td>@Html.DisplayFor(m => item.Incidentes)</td>
-            <td>
-                <div class="dropdown">
-                    <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">Ver mas</button>
-                    <ul class="dropdown-menu">
-                        <li>
-                            <a class="btn btn-success btn-sm" asp-page="./EditarV" asp-route-id="@item.Id">Editar</a>
-                        </li>
-                        <li>
-                            <a class="btn btn-danger btn-sm" asp-page="./EliminarV" asp-route-id="@item.Id">Eliminar</a>
-                        </li>
-                    </ul>
-                </div>
-            </td>
-        </tr>
-        }
-    </tbody>
-    </table>
-    <body>
-        <a class="nav-link text-dark" asp-area="" asp-page="/RegistroSupervision">Registrar Supervision</a>
-    </body>
+<header>
+    <script src="~/js/jspdf.debug.js"></script>
+    <script src="~/js/JavaScript1.js"></script>
+</header>
 
-}
-else
-{
-<div class="border text-center alert-danger">
-    <p>No se encontraron supervisiones</p>
-        <a class="nav-link text-dark" asp-area="" asp-page="/RegistroSupervision">Registrar Supervision</a>
-</div>
-}
+
+<body style="margin-right:50px; background-color:white; margin-left:50px; margin-top:25px; border:double; border-color:crimson;">
+    <p>
+        <a class="btn btn-primary" asp-page="/RegistroSupervision">Registrar Supervision</a>
+    </p>
+    <div id="customers">
+        <table id="tab_customers" class="table-striped sortable table">
+            <colgroup>
+                <col style="width:auto">
+                <col style="width:auto">
+                <col style="width:auto">
+                <col style="width:auto">
+                <col style="width:auto">
+                <col style="width:auto">
+
+
+
+
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>Supervisor ID</th>
+                    <th>Horario de Supervision</th>
+                    <th>Incidentes</th>
+                    <th>Ruta</th>
+                    <th>Supervisor</th>
+                    <th>Informacion de viajes</th>
+
+
+                </tr>
+            </thead>
+            <tbody>
+
+
+                @foreach (var item in Model.ProcesoRevisions)
+                {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.SupervisorId)</td>
+                    <td>@Html.DisplayFor(modelItem => item.HorarioSupervision)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Incidentes)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Ruta)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Supervisor)</td>
+                    <td>@Html.DisplayFor(modelItem => item.InfoViajes)</td>
+                    <td>
+                        <a asp-page="/EditarS" asp-route-Id="@item.Id" class="dropdown-item">Editar</a>
+                    </td>
+                    <td>
+                        <a asp-page="/EliminarS" asp-route-Id="@item.Id" class="dropdown-item">Eliminar</a>
+
+                    </td>
+                </tr>
+
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <div>
+        <button style="width : 100px; heigth : 1px " class="btn btn-success form-control" onclick="javascript:demoFromHTML()">Supervision</button>
+    </div>
+
+    @section Scripts{
+
+        <script type="text/javascript">
+            function demoFromHTML() {
+                var pdf = new jsPDF('l', 'mm', "legal");
+
+                source = $('#customers')[0];
+
+
+                specialElementHandlers = {
+
+                    '#bypassme': function (element, renderer) {
+
+                        return true
+                    }
+                };
+                margins = {
+                    bottom: 10,
+                    left: 10,
+                    width: 400
+                };
+
+                pdf.fromHTML(
+                    source,
+                    margins.left,
+                    margins.top, {
+                    'width': margins.width,
+                    'elementHandlers': specialElementHandlers
+                },
+                    function (dispose) {
+
+                        pdf.save('Supervision.pdf');
+                    }
+                    , margins);
+            }
+        </script>
+    }
+    </body>
