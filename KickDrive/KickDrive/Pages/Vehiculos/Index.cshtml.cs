@@ -1,63 +1,56 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
 using Models;
 using Service;
-using Syncfusion.HtmlConverter;
-using Syncfusion.Pdf;
-
 
 namespace KickDrive.Pages.Vehiculos
 {
     public class IndexModel : PageModel
-
     {
-        [Obsolete]
-        private readonly IHostingEnvironment _hostingEnvironment;
-        private readonly IRepository1<Vehiculo> repository1;
-        public IEnumerable<Vehiculo> Vehiculos { get; private set; }
-        [Obsolete]
+        private readonly AppDBContext _context;
 
-        public IndexModel(IRepository1<Vehiculo> repository1, IHostingEnvironment hostingEnvironment)
+        public IndexModel(AppDBContext context)
         {
-            this.repository1 = repository1;
-            _hostingEnvironment = hostingEnvironment;
-        }
-        public IActionResult OnGet()
-        {
-            try
-            {
-                Vehiculos = repository1.GetAll();
-                return Page();
-            }
-            catch (Exception ex)
-            {
-                return RedirectToPage($"/NotFound");
-            }
-        }
-        [Obsolete]
-        public IActionResult OnPostVehiculos(string submit)
-        {
+            _context = context;
 
-            HtmlToPdfConverter converter = new HtmlToPdfConverter();
-            WebKitConverterSettings settings = new WebKitConverterSettings();
-            settings.WebKitPath = Path.Combine(_hostingEnvironment.ContentRootPath, "QtBinariesWindows");
-            converter.ConverterSettings = settings;
-            PdfDocument document = converter.Convert("https://localhost:44358/vehiculos");
-            MemoryStream ms = new MemoryStream();
-            document.Save(ms);
-            document.Close(true);
-            ms.Position = 0;
-            FileStreamResult fileStreamResult = new FileStreamResult(ms, "application/pdf");
-            fileStreamResult.FileDownloadName = "Reporte.pdf";
-            return fileStreamResult;
+        }
+
+
+
+        [BindProperty(SupportsGet = true)]
+        public string SearchString { get; set; }
+        // Requires using Microsoft.AspNetCore.Mvc.Rendering;
+        public SelectList BuscarVehiculo { get; set; }
+
+        [BindProperty(SupportsGet = true)]
+        public string Vehiculoss { get; set; }
+        public string Conductorss { get; set; }
+
+
+        public IList<Vehiculo> Vehiculos { get; set; }
+
+        public async Task OnGetAsync()
+        {
+            IQueryable<int> genreQuery = from m in _context.Vehiculos
+                                         orderby m.Id
+                                         select m.Id;
+
+            var Emp = from m in _context.Vehiculos
+                      select m;
+
+            if (!string.IsNullOrEmpty(SearchString))
+            {
+                Emp = Emp.Where(s => s.NumeroMotor.Contains(SearchString));
+            }
+
+            BuscarVehiculo = new SelectList(await genreQuery.Distinct().ToListAsync());
+            Vehiculos = await Emp.Include(l => l.Conductor).ToListAsync();
         }
     }
 }

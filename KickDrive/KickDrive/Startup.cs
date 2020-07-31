@@ -10,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Service;
+using IhostingEnvironment=Microsoft.AspNetCore.Hosting.IHostingEnvironment;
 
 namespace KickDrive
 {
